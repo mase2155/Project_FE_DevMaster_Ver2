@@ -1,5 +1,5 @@
 # Project_FE_DevMaster_Ver2
-Dự án FrontEnd cho Nội Thất Hoàng Hà bởi DevMaster
+Dự án FrontEnd cho Nội Thất Hoàng Hoan bởi DevMaster
 # Website Nội Thất Hoàng Hoan - Frontend UI/UX
 ## Tác Giả : Lê Đình Hùng -- .NET Developer
 
