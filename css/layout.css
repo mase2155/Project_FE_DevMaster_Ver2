@@ -68,6 +68,7 @@ header .nav-item a::after {
 header .nav-item:hover a::after {
     display: block;
 }
+
 header .nav-item:last-child a {
     padding-right: 0 !important;
     margin-right: 0 !important;

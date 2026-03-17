@@ -122,6 +122,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    width: 74rem;
 }
 .product-slick .product-content{
     padding: 1rem 0 0.5rem 0;
