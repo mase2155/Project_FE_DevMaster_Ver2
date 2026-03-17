@@ -47,11 +47,12 @@ header {
 }
 
 header .nav-item a {
-    padding: 0 1.75rem !important;
+    padding: 0 2rem !important;
 }
 
 header .nav-item a {
     position: relative;
+    margin-left: 0.5rem;
 }
 
 header .nav-item a::after {
@@ -66,6 +67,16 @@ header .nav-item a::after {
 }
 header .nav-item:hover a::after {
     display: block;
+}
+header .nav-item:last-child a {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+
+}
+header .nav-item:last-child a::after {
+    left: auto;
+    right: 0;
+    width: 70%;
 }
 /* Footer  */
 .info-company {
