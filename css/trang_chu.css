@@ -167,7 +167,7 @@
 
 #home-about_us {
     position: relative;
-    height: 82rem;
+    height: 81rem;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8)),
         url("../img/trang_chu/banner-about_us.jpg");
@@ -200,7 +200,7 @@
     text-transform: uppercase;
     font-family: 'Gotham-Ultra';
     padding-bottom: 0.5rem;
-    
+
 }
 
 #home-about_us h2::after {
@@ -217,11 +217,13 @@
 #home-about_us .content {
     padding-top: 8rem;
 }
+
 .about-us-top-left-img {
     padding-left: 4.25rem;
-   width: 35rem;
+    width: 35rem;
     height: 20rem;
 }
+
 #home-about_us .contentOfTop_Right h3 {
     text-transform: uppercase;
 }
@@ -254,15 +256,23 @@
     max-width: 35.75rem;
 }
 
-.commit-card-1 .about-us-bottom-content {
-    padding-left: 2rem;
+.commit-card-1 {
+    max-width: 35.75rem;
+    margin-left: 4.25rem;
 }
+
+.commit-card-1 .about-us-bottom-content {
+    padding-left: 2.75rem;
+}
+
 .commit-card-1 .about-us-bottom-content>h3 {
     color: #bd945f;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
+
 .commit-card-2 {
     max-width: 35.75rem;
 }
@@ -270,21 +280,30 @@
 .commit-card-2 .about-us-bottom-content {
     padding-left: 2.75rem;
 }
+
 .commit-card-2 .about-us-bottom-content>h3 {
     color: #bd945f;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
+.commit-card-3 {
+    max-width: 35.75rem;
+    margin-left: 4.25rem;
+}
+
 .commit-card-3 .about-us-bottom-content {
     padding-left: 2.75rem;
 }
+
 .commit-card-3 .about-us-bottom-content>h3 {
     color: #bd945f;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
     font-size: 1.5rem;
 }
+
 .commit-card .about-us-bottom-content {
     padding-left: 2rem;
 }
@@ -333,7 +352,7 @@
     color: #fff;
     font-family: 'Gotham-Medium';
 }
-/* Đảm bảo khung hình bên trái cao bằng khung nội dung bên phải */
+
 .about-us-top-left-img {
     width: 100%;
     height: 100%;
@@ -342,6 +361,118 @@
 .about-us-top-left-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
+}
+
+#home-news {
+    position: relative;
+    isolation: isolate;
+}
+
+#home-news .news h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    padding-top: 6rem;
+    font-weight: bold;
+    color: #2c2e53;
+}
+
+#home-news .news h2::after {
+    content: '';
+    height: 0.5rem;
+    width: 10rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+
+
+#home-news .row {
+    display: flex;
+    margin-top: 4rem;
+    padding-bottom: 2.5rem;
+    margin-left: 3.5rem;
+}
+
+.news-left {
+    position: relative;
+}
+
+.news-left>img {
+    height: 32rem;
+    width: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-left .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 106.25%;
+    height: 30%;
+    background-color: #bd945f;
+    display: flex;
+    align-items: flex-end;
+}
+
+.news-left .overlay .overlay-content {
+    padding: 1rem 2rem 0 2rem;
+}
+
+.news-left .overlay .overlay-content h4 {
+    font-family: 'Gotham-Medium';
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.news-left .overlay .overlay-content p {
+    font-family: 'Gotham-Thin';
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.news-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.news-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.img-news-small img {
+    width: 10rem;
+    height: 10rem;
+    padding-bottom: 1rem;
+}
+
+#home-news .news-right .news-item .item-text h3 {
+    font-size: 1.15rem;
+    color: #bd945f;
+    max-width: 17rem;
+}
+
+#home-news .news-right .news-item .item-text p {
+    font-family: 'Gotham-Thin';
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-align: justify;
+    max-width: 19rem;
+}
+
+#home-news .news-right .news-more a {
+    font-family: 'Gotham-Medium';
+    color: #bd945f;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
