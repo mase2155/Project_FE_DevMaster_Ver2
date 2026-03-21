@@ -108,7 +108,18 @@ h3 {
     margin-right: 0.5rem;
     display: inline-block;
 }
-
+.info-company .contact a{
+    margin-right: 0.5rem;
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+.phoneAndMail {
+    transition: all 0.3s ease;
+}
+.phoneAndMail:hover {
+    transform: translateY(-0.5rem);
+}
 .info-company .about-us-footer a {
     font-family: 'Gotham-Thin';
     color: #fff;
@@ -116,9 +127,23 @@ h3 {
     display: flex;
     flex-direction: column;
     padding-bottom: 0.5rem;
+    transition: all 0.3s ease;
 }
+.info-company .about-us-footer a:hover{
+    transform: translateY(-0.5rem);
+}
+
 .info-company .connect-us .social a{
     padding-right: 0.5rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+.info-company .connect-us .social a>img{
+   transition: all 0.3s ease;
+}
+.info-company .connect-us .social a>img:hover{
+    transform: translateY(-0.5rem);
 }
 
 #caption .author {
