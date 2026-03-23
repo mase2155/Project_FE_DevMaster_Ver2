@@ -88,7 +88,25 @@
             </div>
         </header>
         <section id="banner">
-            <img src="img/san_pham/banner.jpg" alt="banner">
+            <div class="banner-item active">
+                <img src="img/san_pham/banner1.jpg" alt="banner1">
+                <div class="banner-btn-click">
+                    <a href="#">mua ngay</a>
+                </div>
+            </div>
+
+            <div class="banner-item">
+                <img src="img/san_pham/banner2.png" alt="banner2">
+            </div>
+
+            <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+            <button class="nav-btn next" id="nextBtn">&#10095;</button>
+
+            <div class="dots-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
         </section>
         <section id="content">
             <div class="container">
@@ -618,5 +636,45 @@
                         Academy</a></p>
             </div>
         </section>
+
+
     </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    const $slides = $('.banner-item');
+    const $dots = $('.dot');
+    let currentIndex = 0;
+
+    function updateBanner(newIndex) {
+        $slides.eq(currentIndex).removeClass('active').fadeOut(500);
+        $slides.eq(newIndex).addClass('active').fadeIn(500);
+
+        
+        $dots.removeClass('active');
+        $dots.eq(newIndex).addClass('active');
+
+        
+        currentIndex = newIndex;
+    }
+
+    
+    $('#nextBtn').click(function() {
+        let nextIndex = (currentIndex + 1) % $slides.length;
+        updateBanner(nextIndex);
+    });
+
+    
+    $('#prevBtn').click(function() {
+        let prevIndex = (currentIndex - 1 + $slides.length) % $slides.length;
+        updateBanner(prevIndex);
+    });
+
+
+    $dots.click(function() {
+        let dotIndex = $(this).index(); 
+        updateBanner(dotIndex);
+    });
+});
+    </script>
 </html>
