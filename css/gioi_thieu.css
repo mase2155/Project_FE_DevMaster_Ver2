@@ -66,8 +66,45 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+.imgOfEstablish img{
+    height: 18rem;
+    width: auto;
+}
 
 .contentOfEstablish p {
     text-align: justify;
-    font-size: 0.95rem;
+}
+
+.vision h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+    font-weight: bold;
+    color: #212546;
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.vision h2::after {
+    content: '';
+    height: 0.6rem;
+    width: 11rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+.contentOfVision img{
+    width: 69.5rem;
+    height: auto;
+    padding-bottom: 1.5rem;
+}
+.contentOfVision p{
+    max-width: 69.5rem;
+    text-align: center;
+    
 }
