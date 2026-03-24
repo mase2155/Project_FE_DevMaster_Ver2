@@ -30,3 +30,58 @@
     font-family: 'Gotham-Ultra';
     color: #fff;
 }
+#introduce {
+    background-color: #f5f5f5;
+}
+#introduce .container {
+    background-color: #fff;
+    position: relative;
+    top: -3.5rem;
+    padding: 8rem 8rem;
+}
+#introduce .image {
+    height: 100%;
+    padding-right: 5rem;
+}
+#introduce .image img {
+    height: 100%;
+    width: 100%;
+}
+
+#introduce .content h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    color: #bd945f;
+    font-size: 2.2rem;
+}
+
+.form-contact input {
+    width: 33rem;
+    height: 3.5rem;
+    padding: 1rem 1rem;
+    border: 0.3rem solid #c19b76; 
+    
+}
+.form-contact ::placeholder {
+    font-family: 'Gotham-Medium';
+    font-weight: 300;
+    color: #2c2e53;
+}
+
+.content .err{
+    color: red;
+    display: none;
+}
+.form-contact button {
+    background-color: #c19b76;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    font-weight: bold;
+    border: #bd945f solid 4px ;
+}
+.form-contact button:hover{
+    background-color: #fff;
+    color: #bd945f;
+    
+}

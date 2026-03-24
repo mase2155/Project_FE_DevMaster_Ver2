@@ -98,6 +98,45 @@
                 <h2>Liên hệ</h2>
             </div>
         </section>
+        <section id="introduce">
+            <div class="container">
+                <div class="row">
+                    <div class="image col-6">
+                        <img src="img/lien_he/image-introduce.jpg"
+                            alt="image-introduce">
+                    </div>
+                    <div class="content col-6">
+                        <h3>liên hệ với chúng tôi</h3>
+                        <div class="form-contact">
+                            <form>
+
+                                <input type="text" name="username" id="username"
+                                    placeholder="Họ Và Tên" required>
+                                <p class="err">Không được để trống</p>
+                                <br><br>
+                                <input type="email" name="email" id="email"
+                                    placeholder="Email" required>
+                                <p class="err">Không được để trống</p>
+                                <p class="err">Email không đúng định dạng</p>
+                                <br><br>
+                                <input type="tel" name="number"
+                                    id="number" placeholder="Số Điện Thoại"
+                                    pattern="[0-9]{10}"
+                                    title="Vui lòng nhập 10 chữ số" required>
+                                <p class="err">Không được để trống</p>
+                                <p class="err">Số Điện Thoại sai định dạng</p>
+                                <br><br>
+                                <input type="text" name="content" id="content"
+                                    placeholder="Nội Dung" required>
+                                <p class="err">Không được để trống</p>
+                                <br><br>
+                                <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="info-company">
             <div class="container">
                 <div class="contact">
@@ -165,5 +204,33 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
 
+    var regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var regexPhone = /^(0|\+84)[3|5|7|8|9][0-9]{8}$/;
+
+        $('input:not([type="submit"]), textarea').on('blur', function () {
+
+            let value = $(this).val().trim();
+            let $errEmpty = $(this).next('.err');
+            let $errFormat = $errEmpty.next('.err');
+            $errEmpty.hide();
+            $errFormat.hide();
+        if (value === "") {
+            $errEmpty.show();
+            return;
+        }
+        if (this.type === 'email' && !regexEmail.test(value)) {
+            $errFormat.show();
+        }
+        if (this.type === 'tel' && !regexPhone.test(value)) {
+            $errFormat.show();
+        }
+
+    });
+
+});
+</script>
 </html>
