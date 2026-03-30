@@ -56,3 +56,31 @@
 .main-content .left-content img {
     width: 50rem;
 }
+.main-content .right-content img {
+    width: 100%;
+    object-fit: cover;
+}
+.right-content .title p {
+    color: #2c2e53;
+    text-transform: uppercase;
+    position: relative;
+}
+.right-content .title p::after {
+    content: '';
+    height: 0.2rem;
+    width: 4rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #bd945f;
+}
+.right-content .line {
+    margin-bottom: 1rem;
+}
+.right-content .col-md-7 a {
+    color: #2c2e53;
+    display: inline-block;
+    text-align: justify;
+    max-width: 12rem;
+    text-transform: uppercase;
+}
