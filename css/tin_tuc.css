@@ -1,0 +1,30 @@
+
+.breadcrumb {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #b8926a;      /* Màu vàng đồng giống ảnh */
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.breadcrumb-separator {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.breadcrumb-item.active {
+    color: #b8926a;      /* Màu cho trang hiện tại */
+    cursor: default;
+}
+
+/* Hiệu ứng nhẹ khi rê chuột */
+.breadcrumb-item a:hover {
+    color: #8e6d4a;
+    text-decoration: underline;
+}
